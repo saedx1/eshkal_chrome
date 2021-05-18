@@ -1,0 +1,10 @@
+{
+  "name": "Eshkal",
+  "description": "An extension to mistify arabic text",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting", "clipboardWrite"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

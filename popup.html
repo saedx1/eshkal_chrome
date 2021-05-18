@@ -1,0 +1,100 @@
+<html dir="rtl">
+<meta charset="utf-8" />
+
+<head>
+    <title>إشكال</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plume-css@1.0.5/lib/plume-all.min.css" />
+
+    <style>
+        @import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+        :root {
+            --pm-button-rounded-size: 150px;
+            --pm-primary-color: green;
+            --pm-secondary-color: yellow;
+            --pm-font-family-primary: "Droid Arabic Kufi";
+            --pm-font-family-secondary: "serif";
+            --pm-button-font-size: "300px";
+        }
+
+
+        body {
+            margin: 0 auto;
+
+        }
+
+        h1.title {
+            direction: rtl;
+            color: #444;
+            font-size: 1.7em;
+            font-family: "Droid Arabic Kufi", serif;
+            margin: 0.5em;
+            text-align: center;
+        }
+
+        .kufi {
+            direction: rtl;
+            color: #444;
+            font-family: "Droid Arabic Kufi", serif;
+        }
+
+        textarea.main-text {
+            font-size: 1em;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            width: 30em;
+            height: 8em;
+            resize: none;
+            color: white;
+            background-color: #444;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex-container>div {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body class="plume kufi">
+    <div class="flex-container pm-container" style="height: 90%">
+        <div style="flex-grow: 1">
+            <h1 id="title" class="title">إشڴاڵ</h1>
+            <div>
+                <div style="font-size: 0.8em; text-align: center;">
+                    إشكال تساعدك على جعل كلماتك العربية أكثر غموضاً
+                </div>
+            </div>
+            <div style="flex-grow: 11">
+                <div>
+                    <textarea id="in" class="main-text"></textarea>
+                </div>
+
+                <div>
+                    <textarea id="out" class="main-text" readonly="true"></textarea>
+                </div>
+            </div>
+            
+            <div>
+                    <input type="checkbox" class="option" id="option-similar" /> تمويه
+                    <input type="checkbox" class="option" id="option-nodots" checked="checked" /> لا نقاط
+                    <input type="checkbox" class="option" id="option-english" /> فرنكة
+                    <input type="checkbox" class="option" id="option-tashkeel" /> تشكيل
+                    <input type="checkbox" class="option" id="option-fasel" /> فواصل
+            </div>
+            <button id="copytext" style="margin-top: 0.5em; margin-inline-start: 11em;">نسخ</button>
+            <ul style="font-size: 0.8em;">
+                <li style="margin-bottom: 0;">حقوق المصدر اﻷصلي تعود لـِ <a href="https://github.com/Namozag/eshkal">Namozag/eshkal</a></li>
+                <li style="margin-bottom: 0;">حقوق إضافة المتصفح تعود لـِ <a href="https://github.com/saedx1/eshkal_chrome">saedx1</a></li>
+            </ul>
+        </div>
+
+        <script src="eshkal.js" charset="utf-8"></script>
+
+</body>
+
+</html>
