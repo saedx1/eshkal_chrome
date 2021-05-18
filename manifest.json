@@ -5,6 +5,13 @@
   "manifest_version": 3,
   "permissions": ["storage", "activeTab", "scripting", "clipboardWrite"],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/eshkal.png",
+      "32": "/images/eshkal.png",
+      "48": "/images/eshkal.png",
+      "128": "/images/eshkal.png",
+      "256": "/images/eshkal.png"
+    }
   }
 }
